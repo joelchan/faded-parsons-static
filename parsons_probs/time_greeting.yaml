@@ -1,0 +1,33 @@
+problem_name: time_greeting
+
+problem_description: |
+  <code>time_greeting</code>
+    returns a greeting based on the hour of the day (0-23).
+    Before 12: "Good morning!", 12-16: "Good afternoon!",
+    17-20: "Good evening!", after 20: "Good night!"
+
+  <pre><code>
+  >>> time_greeting(8)
+  'Good morning!'
+  >>> time_greeting(12)
+  'Good afternoon!'
+  >>> time_greeting(16)
+  'Good afternoon!'
+  >>> time_greeting(17)
+  'Good evening!'
+  >>> time_greeting(21)
+  'Good night!'
+  </code></pre>
+
+code_lines: |
+  def time_greeting(hour): #0given
+  if hour < !BLANK:
+  return "Good morning!"
+  elif hour <= !BLANK:
+  return "Good afternoon!"
+  elif hour <= !BLANK:
+  return "Good evening!"
+  else:
+  return "Good night!"
+
+test_fn: time_greeting

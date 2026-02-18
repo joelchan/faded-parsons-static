@@ -1,0 +1,24 @@
+problem_name: number_guess
+
+problem_description: |
+  <code>number_guess</code>
+    returns "You got it!" if the guess matches the secret number,
+    "Try again!" otherwise.
+
+  <pre><code>
+  >>> number_guess(7, 7)
+  'You got it!'
+  >>> number_guess(3, 7)
+  'Try again!'
+  >>> number_guess(10, 4)
+  'Try again!'
+  </code></pre>
+
+code_lines: |
+  def number_guess(guess, secret_number): #0given
+  if !BLANK == !BLANK:
+  return "You got it!"
+  else:
+  return "Try again!"
+
+test_fn: number_guess

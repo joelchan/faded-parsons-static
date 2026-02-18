@@ -1,0 +1,33 @@
+problem_name: job_screener
+
+problem_description: |
+  <code>job_screener</code>
+    returns the hiring decision based on degree and experience.
+    With degree: 3+ years -> "Schedule an interview", else "Consider for junior position".
+    Without degree: 5+ years -> "Schedule an interview", else "Does not meet requirements".
+
+  <pre><code>
+  >>> job_screener(True, 5)
+  'Schedule an interview'
+  >>> job_screener(True, 1)
+  'Consider for junior position'
+  >>> job_screener(False, 6)
+  'Schedule an interview'
+  >>> job_screener(False, 3)
+  'Does not meet requirements'
+  </code></pre>
+
+code_lines: |
+  def job_screener(has_degree, years_experience): #0given
+  if !BLANK:
+  if years_experience >= !BLANK:
+  return "Schedule an interview"
+  else:
+  return "Consider for junior position"
+  else:
+  if years_experience >= !BLANK:
+  return "Schedule an interview"
+  else:
+  return "Does not meet requirements"
+
+test_fn: job_screener

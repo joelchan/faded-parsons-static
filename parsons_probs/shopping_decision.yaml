@@ -1,0 +1,26 @@
+problem_name: shopping_decision
+
+problem_description: |
+  <code>shopping_decision</code>
+    returns "Buy it!" if the item is on sale AND you have enough money,
+    "Maybe next time." otherwise.
+
+  <pre><code>
+  >>> shopping_decision(True, 25, 30)
+  'Buy it!'
+  >>> shopping_decision(True, 25, 25)
+  'Buy it!'
+  >>> shopping_decision(True, 25, 20)
+  'Maybe next time.'
+  >>> shopping_decision(False, 25, 30)
+  'Maybe next time.'
+  </code></pre>
+
+code_lines: |
+  def shopping_decision(on_sale, price, money): #0given
+  if !BLANK and money >= !BLANK:
+  return "Buy it!"
+  else:
+  return "Maybe next time."
+
+test_fn: shopping_decision

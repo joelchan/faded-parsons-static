@@ -1,0 +1,22 @@
+problem_name: deans_list
+
+problem_description: |
+  <code>deans_list</code>
+    returns "You made the dean's list!" if GPA is 3.5 or above,
+    None otherwise.
+
+  <pre><code>
+  >>> deans_list(3.8)
+  "You made the dean's list!"
+  >>> deans_list(3.5)
+  "You made the dean's list!"
+  >>> deans_list(3.0)
+  >>> deans_list(2.5)
+  </code></pre>
+
+code_lines: |
+  def deans_list(gpa): #0given
+  if gpa !BLANK !BLANK:
+  return "You made the dean's list!"
+
+test_fn: deans_list

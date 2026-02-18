@@ -1,0 +1,31 @@
+problem_name: email_filter
+
+problem_description: |
+  <code>email_filter</code>
+    returns which folder an email should be sorted into.
+    Known contact: "Inbox"
+    Unknown + has unsubscribe link: "Promotions"
+    Unknown + no unsubscribe link: "Unknown - review manually"
+
+  <pre><code>
+  >>> email_filter(True, False)
+  'Inbox'
+  >>> email_filter(True, True)
+  'Inbox'
+  >>> email_filter(False, True)
+  'Promotions'
+  >>> email_filter(False, False)
+  'Unknown - review manually'
+  </code></pre>
+
+code_lines: |
+  def email_filter(from_known_contact, contains_unsubscribe): #0given
+  if !BLANK:
+  return "Inbox"
+  else:
+  if !BLANK:
+  return "Promotions"
+  else:
+  return "Unknown - review manually"
+
+test_fn: email_filter

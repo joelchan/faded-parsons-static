@@ -1,0 +1,33 @@
+problem_name: bmi_category
+
+problem_description: |
+  <code>bmi_category</code>
+    returns the BMI category for the given BMI value.
+    Under 18.5: "Underweight", 18.5-24.9: "Normal weight",
+    25.0-29.9: "Overweight", 30+: "Obese"
+
+  <pre><code>
+  >>> bmi_category(16)
+  'Underweight'
+  >>> bmi_category(18.5)
+  'Normal weight'
+  >>> bmi_category(22.5)
+  'Normal weight'
+  >>> bmi_category(25.0)
+  'Overweight'
+  >>> bmi_category(30.0)
+  'Obese'
+  </code></pre>
+
+code_lines: |
+  def bmi_category(bmi): #0given
+  if bmi < !BLANK:
+  return "Underweight"
+  elif bmi <= !BLANK:
+  return "Normal weight"
+  elif bmi <= !BLANK:
+  return "Overweight"
+  else:
+  return "Obese"
+
+test_fn: bmi_category

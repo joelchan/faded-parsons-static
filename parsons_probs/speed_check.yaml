@@ -1,0 +1,23 @@
+problem_name: speed_check
+
+problem_description: |
+  <code>speed_check</code>
+    returns "Stop" if speed is above the limit, "Go ahead" otherwise.
+
+  <pre><code>
+  >>> speed_check(75, 45)
+  'Stop'
+  >>> speed_check(25, 45)
+  'Go ahead'
+  >>> speed_check(45, 45)
+  'Go ahead'
+  </code></pre>
+
+code_lines: |
+  def speed_check(speed, limit): #0given
+  if !BLANK > !BLANK:
+  return !BLANK
+  else:
+  return !BLANK
+
+test_fn: speed_check

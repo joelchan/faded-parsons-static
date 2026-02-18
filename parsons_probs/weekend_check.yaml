@@ -1,0 +1,22 @@
+problem_name: weekend_check
+
+problem_description: |
+  <code>weekend_check</code>
+    returns "No class today!" if the day is Saturday or Sunday,
+    None otherwise.
+
+  <pre><code>
+  >>> weekend_check("Saturday")
+  'No class today!'
+  >>> weekend_check("Sunday")
+  'No class today!'
+  >>> weekend_check("Monday")
+  >>> weekend_check("Wednesday")
+  </code></pre>
+
+code_lines: |
+  def weekend_check(day): #0given
+  if day == !BLANK or day == !BLANK:
+  return "No class today!"
+
+test_fn: weekend_check

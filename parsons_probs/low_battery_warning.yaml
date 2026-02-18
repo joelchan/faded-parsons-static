@@ -1,0 +1,22 @@
+problem_name: low_battery_warning
+
+problem_description: |
+  <code>low_battery_warning</code>
+    returns "Low battery warning!" if battery level is below 20,
+    None otherwise.
+
+  <pre><code>
+  >>> low_battery_warning(15)
+  'Low battery warning!'
+  >>> low_battery_warning(5)
+  'Low battery warning!'
+  >>> low_battery_warning(20)
+  >>> low_battery_warning(50)
+  </code></pre>
+
+code_lines: |
+  def low_battery_warning(battery_level): #0given
+  if battery_level !BLANK 20:
+  return !BLANK
+
+test_fn: low_battery_warning

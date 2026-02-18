@@ -1,0 +1,31 @@
+problem_name: restaurant_order
+
+problem_description: |
+  <code>restaurant_order</code>
+    returns the order status based on restaurant availability.
+
+  <pre><code>
+  >>> restaurant_order(True, True, True)
+  'Order placed!'
+  >>> restaurant_order(True, True, False)
+  'Sorry, that item is sold out'
+  >>> restaurant_order(True, False, True)
+  "We don't serve that here"
+  >>> restaurant_order(False, True, True)
+  "Sorry, we're closed"
+  </code></pre>
+
+code_lines: |
+  def restaurant_order(is_open, on_menu, in_stock): #0given
+  if !BLANK:
+  if !BLANK:
+  if !BLANK:
+  return "Order placed!"
+  else:
+  return "Sorry, that item is sold out"
+  else:
+  return "We don't serve that here"
+  else:
+  return "Sorry, we're closed"
+
+test_fn: restaurant_order

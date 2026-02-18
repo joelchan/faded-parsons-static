@@ -1,0 +1,31 @@
+problem_name: water_state
+
+problem_description: |
+  <code>water_state</code>
+    returns the state of water at the given temperature in Celsius.
+    0 or below: "Solid (ice)", above 100: "Gas (steam)",
+    otherwise: "Liquid (water)"
+
+  <pre><code>
+  >>> water_state(-5)
+  'Solid (ice)'
+  >>> water_state(0)
+  'Solid (ice)'
+  >>> water_state(50)
+  'Liquid (water)'
+  >>> water_state(100)
+  'Liquid (water)'
+  >>> water_state(105)
+  'Gas (steam)'
+  </code></pre>
+
+code_lines: |
+  def water_state(temp_c): #0given
+  if temp_c !BLANK 0:
+  return "Solid (ice)"
+  elif temp_c !BLANK 100:
+  return "Gas (steam)"
+  else:
+  return "Liquid (water)"
+
+test_fn: water_state

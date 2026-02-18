@@ -1,0 +1,29 @@
+problem_name: amusement_ride
+
+problem_description: |
+  <code>amusement_ride</code>
+    returns whether someone can ride based on height (inches) and age.
+    Must be at least 48 inches tall. Under 12 needs an adult.
+
+  <pre><code>
+  >>> amusement_ride(50, 15)
+  'Enjoy the ride!'
+  >>> amusement_ride(50, 10)
+  'You need an adult with you'
+  >>> amusement_ride(48, 12)
+  'Enjoy the ride!'
+  >>> amusement_ride(45, 15)
+  "Sorry, you're too short for this ride"
+  </code></pre>
+
+code_lines: |
+  def amusement_ride(height, age): #0given
+  if height >= !BLANK:
+  if age < !BLANK:
+  return "You need an adult with you"
+  else:
+  return "Enjoy the ride!"
+  else:
+  return "Sorry, you're too short for this ride"
+
+test_fn: amusement_ride

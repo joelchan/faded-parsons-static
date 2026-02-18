@@ -1,0 +1,32 @@
+problem_name: shipping_cost
+
+problem_description: |
+  <code>shipping_cost</code>
+    returns the shipping cost based on package weight in pounds.
+    Under 1 lb: 3, 1-5 lbs: 7, over 5 lbs: 12.
+
+  <pre><code>
+  >>> shipping_cost(0.5)
+  3
+  >>> shipping_cost(1)
+  7
+  >>> shipping_cost(3.5)
+  7
+  >>> shipping_cost(5)
+  7
+  >>> shipping_cost(5.1)
+  12
+  >>> shipping_cost(10)
+  12
+  </code></pre>
+
+code_lines: |
+  def shipping_cost(weight): #0given
+  if weight !BLANK 1:
+  return 3
+  elif weight !BLANK 5:
+  return 7
+  else:
+  return 12
+
+test_fn: shipping_cost
