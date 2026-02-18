@@ -1,0 +1,26 @@
+problem_name: get_discount
+
+problem_description: |
+  <code>get_discount</code>
+    returns whether someone gets a discount.
+    Eligible if they are a student OR a senior (age 65 or older).
+
+  <pre><code>
+  >>> get_discount(True, 20)
+  'You get a discount!'
+  >>> get_discount(False, 65)
+  'You get a discount!'
+  >>> get_discount(False, 70)
+  'You get a discount!'
+  >>> get_discount(False, 30)
+  'No discount available.'
+  </code></pre>
+
+code_lines: |
+  def get_discount(is_student, age): #0given
+  if !BLANK !BLANK age >= !BLANK:
+  return "You get a discount!"
+  else:
+  return "No discount available."
+
+test_fn: get_discount

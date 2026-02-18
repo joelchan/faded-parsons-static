@@ -1,0 +1,28 @@
+problem_name: flight_delayed
+
+problem_description: |
+  <code>flight_delayed</code>
+    returns whether a flight is delayed.
+    Delayed if wind > 40 mph OR (visibility < 3 miles AND conditions are not clear).
+
+  <pre><code>
+  >>> flight_delayed(45, 10, True)
+  'Flight delayed.'
+  >>> flight_delayed(20, 2, False)
+  'Flight delayed.'
+  >>> flight_delayed(20, 2, True)
+  'Flight on time.'
+  >>> flight_delayed(20, 10, True)
+  'Flight on time.'
+  >>> flight_delayed(20, 5, False)
+  'Flight on time.'
+  </code></pre>
+
+code_lines: |
+  def flight_delayed(wind_speed, visibility, is_clear): #0given
+  if wind_speed > !BLANK !BLANK (visibility < !BLANK !BLANK !BLANK is_clear):
+  return "Flight delayed."
+  else:
+  return "Flight on time."
+
+test_fn: flight_delayed

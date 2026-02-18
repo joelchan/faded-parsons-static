@@ -1,0 +1,30 @@
+problem_name: restaurant_open
+
+problem_description: |
+  <code>restaurant_open</code>
+    returns whether a restaurant is open based on the hour (24-hour time).
+    Open during lunch (11-14) OR dinner (17-21).
+
+  <pre><code>
+  >>> restaurant_open(12)
+  'We are open!'
+  >>> restaurant_open(14)
+  'We are open!'
+  >>> restaurant_open(18)
+  'We are open!'
+  >>> restaurant_open(15)
+  'Sorry, we are closed.'
+  >>> restaurant_open(9)
+  'Sorry, we are closed.'
+  </code></pre>
+
+code_lines: |
+  def restaurant_open(hour): #0given
+  lunch = hour >= !BLANK !BLANK hour <= !BLANK
+  dinner = hour >= !BLANK !BLANK hour <= !BLANK
+  if lunch !BLANK dinner:
+  return "We are open!"
+  else:
+  return "Sorry, we are closed."
+
+test_fn: restaurant_open

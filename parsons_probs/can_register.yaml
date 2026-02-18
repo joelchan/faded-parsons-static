@@ -1,0 +1,26 @@
+problem_name: can_register
+
+problem_description: |
+  <code>can_register</code>
+    returns whether a student can register for a class.
+    Must have the prerequisite AND be at least a junior (60+ credits).
+
+  <pre><code>
+  >>> can_register(True, 60)
+  'You can register!'
+  >>> can_register(True, 90)
+  'You can register!'
+  >>> can_register(False, 60)
+  'You cannot register.'
+  >>> can_register(True, 59)
+  'You cannot register.'
+  </code></pre>
+
+code_lines: |
+  def can_register(has_prereq, credits): #0given
+  if !BLANK !BLANK credits >= !BLANK:
+  return "You can register!"
+  else:
+  return "You cannot register."
+
+test_fn: can_register

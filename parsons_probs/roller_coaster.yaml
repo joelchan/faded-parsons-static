@@ -1,0 +1,26 @@
+problem_name: roller_coaster
+
+problem_description: |
+  <code>roller_coaster</code>
+    returns whether someone can ride a roller coaster.
+    Must be at least 48 inches tall AND at least 8 years old.
+
+  <pre><code>
+  >>> roller_coaster(50, 10)
+  'Welcome aboard!'
+  >>> roller_coaster(48, 8)
+  'Welcome aboard!'
+  >>> roller_coaster(50, 7)
+  'Sorry, you cannot ride.'
+  >>> roller_coaster(45, 10)
+  'Sorry, you cannot ride.'
+  </code></pre>
+
+code_lines: |
+  def roller_coaster(height, age): #0given
+  if height >= !BLANK !BLANK age >= !BLANK:
+  return "Welcome aboard!"
+  else:
+  return "Sorry, you cannot ride."
+
+test_fn: roller_coaster
